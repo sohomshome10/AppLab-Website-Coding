@@ -693,6 +693,16 @@ body{
     font-size: 17px;
     font-weight: 500;
 }
+.faq{
+    width: 880px;
+    margin: 0 auto;
+}
+.q{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .qus{
     width: 880px;
     margin: 10px auto;
@@ -700,13 +710,42 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: #f5f7fa;
+    list-style: none;
     padding: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.qus:hover{
+    background-color: #90afff;
+    color: #fff;
 }
 .qustext{
     color: #242f51;
 }
 .plus{
     color: #242f51;
+    font-size: 25px;
+    font-weight: 700;
+}
+.ans{
+    width: 880px;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 500;
+    list-style: none;
+    background-color: rgb(226, 206, 206);
+    display: none;
+}
+.a{
+    list-style: none;
+}
+.qactive{
+    background-color: #2563ff;
+    color: #fff;
+}
+.qtactive{
+    color: #fff;
 }
 .downwrapper{
     width: 1150px;

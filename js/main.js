@@ -39,4 +39,14 @@ $(function(){
         },500);
         return false;
     });
+    $('li.qus').on('click', function(){
+        if ($(this).hasClass("qactive")) {
+            $(this).removeClass("qactive");
+            $(this).siblings("li.ans").slideUp(400);
+          } else {
+            $(this).removeClass("qactive");
+            $("li.ans").slideUp(400);
+            $(this).siblings("li.ans").slideDown(400);
+          }
+    });
 });
